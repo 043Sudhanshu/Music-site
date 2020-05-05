@@ -1,0 +1,815 @@
+/*font size of all the elements*/
+html{
+	font-size:23px;
+}
+
+
+
+body{
+   width:100%;
+   height:auto;
+   margin:0;
+   color:white;
+   font-family: Palatino Linotype;
+   font-weight: 100;
+   background-color:black; 
+ }
+
+/*css variable to give the theme*/
+
+ :root{
+      --section-color: black;
+    --small-text: 0.45rem;
+    --medium-text: 0.6rem;
+    --large-text: 0.8rem;
+}
+
+
+
+/*class for all div's to inherit this small text property*/
+.small-text{
+	font-size: var(--small-text);
+	color: grey;
+}
+
+/*class for all div's to inherit this medium text property*/
+
+.medium-text{
+   font-size: var(--medium-text);
+   font-weight: 100;
+}
+
+.large-text{
+	font-size:var(--large-text);
+}
+
+/* specifying header properties*/
+
+#header{
+    height: auto;
+    font-size: 1rem;
+    width: 100%;
+    position: fixed;
+    background-image:linear-gradient(black,blue,black);                                /*css variable to specify the background color of th header*/
+    padding: 0.2% 1%;                                           
+    box-sizing: border-box;                        /*we will take space from the div itself */
+    display: flex;
+    flex-wrap: wrap;                          /*to control the responsiveness*/
+    z-index:10;
+    justify-content: space-between;
+        
+}
+
+
+
+
+/*class for both the div inside header*/
+
+    .header-part{
+        width: 400px;
+    height: 64px;
+    display: flex;
+    box-sizing: border-box;
+    justify-content: flex-start;
+    align-items: center;
+   }
+         /*header right part*/
+        
+    .header-part img{
+            border-radius: 50%;
+            width:2em;
+        }
+
+        /*to give margin to the div's which are presented in the right div of the header*/
+     
+        .margin>div{
+            margin-right: 8%;
+        }
+
+
+        /*add some styling and properties to the search bar*/
+
+        input[type="text"]
+        {
+     background-image: radial-gradient(black,blue);
+    border-radius: 0.5em;
+    border: 0;
+    padding: 1% 8%;              /*i have used padding here because in this i can place the mike icon and other magifying glass icon*/
+    font-size: .8em;
+    color: white;
+    
+        }
+
+        /*this class is used to put icons and the search bar together*/
+        .search{
+            display: flex;
+            align-items:center;
+            position: relative;     /* relative because the icons will be place according to the div which has search class*/
+        }
+
+       /*making it absolute to leave there space so that we can place where we want*/
+        .icon1,.icon2{
+            position: absolute;
+            font-size:0.6em;
+            color: black;
+        }
+        /*placing it acc to search bar*/
+        
+        .icon1{
+        left: 1.4%;
+        }
+        /*placing it acc to search bar*/
+         .icon2{
+        right: 1.4%;
+        }
+   
+   /*media queries*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /* main */
+
+ /*main has 2 childs one is section and another is aside*/
+        #main{
+            width:100%;
+            height:auto;
+            position: relative;
+            z-index: 5;
+            top:63px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            background-image: linear-gradient(45deg, black, blue,black,blue,black,blue,black,blue);
+        }  
+
+
+
+/*some measurments of section which is part of main*/
+ #section{
+        
+    width: 62%;
+    /*border: 2px solid blue;
+    */height: auto;
+    position: relative;
+    left: 5%;
+    margin-top: 3%;
+  }
+
+
+  .flex-property{                 /*class for all to inherit common properties of flex*/
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  }
+
+           /*section1 starts from here*/
+
+   .section1{        
+   	width:100%;
+   	height:15vw;
+   /* border:2px solid yellow;
+   */ margin:2% 0;
+  }
+
+
+.inside-box{                          /*properties of the div's inside the section1*/
+        width:29%;
+        height: 75%;
+   /*     border:2px solid black;
+   */     background-size:cover;
+        transition: all 0.2s ease-in-out;
+        background-repeat: no-repeat; 
+     background-position: center;
+      
+       }
+
+       /*here img1 img2 img3 are the background images of all the div of section1*/
+     
+     .img1{                                
+        background-image: url("10.jpeg");
+        opacity: 0.75;
+       }
+       .img2{
+    background-image: url("8.jpeg");
+        opacity: 0.75;
+      }
+       .img3{
+    background-image: url("9.jpeg");
+       opacity:0.75;
+       }
+
+       /*properties when we hover the div inside the section1*/
+
+       .inside-box:hover{
+        width:23vw;
+        height: 14vw;
+        opacity:1;
+        box-shadow: 0 0 10px 10px rgba(200,200,200,0.1);
+       }
+
+
+
+
+/*section 2 which has 4 div */
+
+.section2{
+    width:100%;
+   /* border:2px solid yellow;
+   */ height:21vw;
+    
+}
+.section2>div{
+	width:48%;
+	height:45%;
+	overflow: hidden;
+/*	border: 2px solid yellow;
+*/}
+
+
+
+/*this is class of the setting the height and width of inside part's div  
+*/
+.section2inside-box>div{
+	
+	width:27%;
+	height: 83%;
+/*	border:2px solid yellow;
+*/}
+
+/*this is the image common in all the section2
+*/.img4{
+	background-image: url("2.jpeg");
+}
+/*
+this class is for those two icons by which we are targeting the footer
+*/
+ .section2-img{
+        width:28%;
+        height:93%; 
+/*        border:2px solid red;
+*/        font-size:5em;
+        display: flex;
+        overflow: hidden;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+       }
+      /* setting the height and width of the icons
+      */ 
+
+         .section2-img>div{
+      /*    border:1px solid white;
+      */    width:100%;
+        height:100%;
+        position: absolute;
+        display: flex;
+        color: transparent;
+       justify-content: center;
+       align-items:center;
+       }
+     /* we have set its opacity to zero but when we will hover it will become 1
+     */  .section2-img>div a{
+        opacity: 0;
+       }
+       .section2-img>div a:hover{
+        color:#a0a0a0;
+        opacity: 1;
+       }
+      .section2-img>div:hover{
+        background-color: #80808078;
+        color:#e6dede;
+            }
+
+
+
+
+
+
+
+
+/************************************************section3***********************************************/
+
+.section3{
+	    width: 100%;
+    height: 16vw;
+/*    border: 2px solid yellow;
+*/    margin-top:-5%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+/*setting the divs inside the section3 making them round
+*/.section3>div{
+	width:15%;
+	height:57%;
+	border-radius: 50%; 
+}
+
+
+
+
+    /* section3 name of artist*/
+    
+   /*this class contains the all names*/
+
+.section3names{
+	  width: 100%;
+    height: 4vw;
+/*    border: 2px solid yellow;
+*/    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: -5%;                /*to make the names closer*/
+}
+ 
+ /*giving them value accordingly*/
+
+.section3names>div{
+	width:15%;
+	height: 80%;              
+	text-align: center;
+/*	border: 2px solid yellow;
+*/}
+
+/*setting images to the divs of section3*/
+
+
+
+/*this class is common for everyone*/
+
+.image{
+      background-position: center;
+      background-size: cover;
+ }
+
+    .img11{background-image: url("1.jpeg");}
+    .img12{background-image: url("2.jpeg");}
+    .img13{background-image: url("3.jpeg");}
+    .img14{background-image: url("4.jpeg");}
+    .img15{background-image: url("5.jpeg");}
+    .img16{background-image: url("6.jpeg");}
+
+
+
+
+
+/******************************section4***************************/
+
+/*
+this section changes the margin only because it is taking all the properties from section3 class
+*/
+.section4{
+	margin-top:0%;
+	background-image:linear-gradient(black,blue,black); 
+}
+
+/*to put the text between the image
+*/.section4names>div{
+	color:white;
+ margin-top: -22.8%;
+ font-weight: bold;
+}
+
+/*all images*/
+
+.img22{
+      background-image: url("33.jpeg");
+      
+ }
+    .img33{
+      background-image: url("22.jpeg");
+  
+    }
+    .img44{
+      background-image: url("44.jpeg");
+      
+ }
+    .img55{
+      background-image: url("55.jpeg");
+    
+    }
+    .img66{
+      background-image: url("66.jpeg");
+    }
+    .img77{
+      background-image: url("11.jpeg");
+   
+    }
+
+
+/********************************************section5*******************************/
+
+/*
+this section contain 3 divs
+*/
+    .section5{
+    
+     width:100%;
+     height:11vw;
+/*     border: 2px solid yellow;
+*/    display: flex;
+    justify-content: space-between; 
+    }
+
+/*hidding the overflow so that image wont come outside when it hovers
+*/    
+    .section5>div{
+      width:30%;
+      height: 99%;
+/*      border: 2px solid yellow;
+*/      display: flex;
+      justify-content: center;
+     align-items: center;
+    overflow: hidden;  
+    }
+   /* adding transition and setting the opacity in the div which is inside the div of section5
+   */ .e{    
+    background-position: center;
+    background-size: cover;
+    transition: all 0.2s ease-in-out;
+    height: 99%;
+    width: 99%;
+    opacity: 0.9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:white;
+
+     }
+     /*setting all the three images*/
+     .img01{
+      background-image: url("13.jpeg");
+     }
+     .img02{
+         background-image: url("14.jpeg");
+      }
+     .img03{
+       background-image: url("15.jpeg");
+      }
+
+
+      /*changing height and width while hovering*/
+     .e:hover{
+       width:130%;
+       height:250%;
+
+    }
+
+
+
+
+/*section6 and section7 are similar to section3 in responsiveness and everything we are just changing the border-radius property to 0 only
+
+*/
+
+.border-radius>div{
+	border-radius: 0;
+}
+
+
+
+
+
+/********************** properties of aside section***********************/
+   /*aside*/
+
+/*it is fixed for width greater than 900px,hidding its overflow*/
+
+       #aside{
+       position: fixed;
+    top: 126px;
+    right: 2%;
+    overflow: hidden;
+    width: 28%;
+    height: 457px;
+/*    border: 2px solid green;
+*/       
+       }
+
+/*this class is for the heading of aside section which is queue
+ */      .aside1{
+        width:99%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+/*        border: 2px solid green;
+*/     
+       }
+   /* setting height and width of aside2*/
+       .aside2{
+          width:99%;
+          height:79vh;
+          overflow: auto;
+       }
+
+       /*setting the list parameters*/
+
+      .aside2-insidebox{
+        width: 104%;
+    height: 37px;
+    margin-bottom: 7%;
+    display: flex;
+    align-items: center;
+    background-image: linear-gradient(to right,black,blue,black);
+
+              }
+/*
+     setting the parameters inside the list
+*/
+       .aside2-insidebox>div{
+                width:15%;
+                height:100%;
+             }
+
+            /* hide the scrollbar*/
+       .aside2::-webkit-scrollbar{
+       display: none;
+       }
+      /* setting image*/
+       .img501{background-image:url("501.jpeg");}
+       .img502{background-image:url("502.jpeg");}
+       .img503{background-image:url("503.jpeg");}
+       .img504{background-image:url("504.jpeg");}
+       .img505{background-image:url("505.jpeg");}
+       .img506{background-image:url("506.jpeg");}
+/****************putting content after the bell in header************/
+.iconbell{
+	position: relative;
+}
+
+
+
+.iconbell::after{
+	    top: -41px;
+    right: -2px;
+    content: '.';
+    color: #F44336;
+    position: absolute;
+    font-size: 50px;
+}
+
+
+
+
+
+
+
+/**********************************************************footer***************************************************/
+
+
+
+/*
+ footer has fixed property and all the properties
+*/
+
+#footer{
+    height:0;
+    width:0;
+    position:fixed;
+    overflow: hidden;
+    transition: all 0.2s ease-out,transform 2s;
+    bottom:0;
+    right:0;
+}
+/*
+values to sub division of footers
+*/
+
+#footer:target{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-around;
+    background-color: #1f1e1e;
+    position: fixed;
+    bottom: 0;
+    align-items: center;
+    transform: rotate(360deg);
+   background-image:linear-gradient(black,#676666,black);
+}
+
+/*
+values to sub division of footers
+*/
+
+#footer>div{
+    width:30%;
+    height: 80%;
+    overflow: hidden;
+    }
+/*i have used this class to specify the flex*/
+
+
+.left-footer-div{
+    display: flex;
+
+}
+
+/*i have used this class to specify the width and height of divs inside the left part of footer */
+
+.left-footer-div>div{
+    width:17%;
+    height:100%;
+    
+}
+
+/*
+   this class is used for the icons used in the middle part of the footer to give it size accordingly
+*/
+
+.player-icons{
+    width:100%;
+    height:60%;
+display:flex;
+color:black;
+margin-bottom: -4%;
+justify-content: space-between;
+
+}
+/*
+   this class is used for the icons used in the middle part of the footer for the div inside it
+*/
+.player-icons>div{
+    width:15%;
+    height:50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image:linear-gradient(black,#525252,black);
+  /*  border:1px solid white;
+  */  font-size:0.8rem;
+    border-radius:1rem;
+}
+
+/*
+this is the div which is in the lower part of the middle div
+*/
+.volume{
+    width:100%;
+    height:40%;
+/*  border:2px solid yellow;
+*/   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+/*to give the slider a full space in its div
+*/
+
+.slider{
+    width:100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   /*to decrease the width of header's 1st part to 300px and the respective font size*/
+
+   @media screen and (max-width:900px){
+     .header-part1{               /*to decrease the width of header's 1st part to 300px */
+     	width:300px;
+     }
+     
+
+
+     #section{                /*section width becomes 90% for screen size less than 900px*/
+     	width:90%;
+     }
+     #aside{                    /*making the position of aside section relative as it was fixed for screen size greater than 900px*/
+     position: relative;
+    width: 90%;
+    top: 0;
+    margin-left: 7%;
+    height: 350px;
+    overflow: hidden;
+     }
+     .aside2{
+     	overflow: auto;             /* making overflow: auto when aside goes down */
+     }
+     #aside::-webkit-scrollbar{         /* when the aside goes down to hide scroll bar*/
+       display: none;
+       }
+    
+
+
+   	.section2inside-box>div{       /*to reduce size of div's in section3*/
+	
+	width:20%;
+	height: 85%;
+/*	border:2px solid yellow;
+*/}
+.section3{
+	margin-top:0; 
+}
+.section3>div{           /*adjusting height of divs inside section3 when max-width becomes 900px*/
+height:84%;
+}
+ 
+.section3names{  
+     height:4vw;                /*adjusting the whole div of section3names because it was overlapping with the section3*/
+	margin:0%;
+}
+
+
+    .section5{
+    height: 14vw;
+   }
+
+
+   .iconbell::after{             /*setting iconbell when the header changes by media query*/
+	    top: -44px;
+ }
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 740px){
+	#header{
+		flex-direction: column;      /*when the width is reduced much we have to align them in column*/
+	}
+	.header-part{
+		font-size:0.6rem;
+		height:47px;
+		margin:auto;        /* to give them proper margin as they reduce*/
+	   padding:3%;
+	}
+	input[type="text"]{         /* for the search bar to reduce its size*/
+		font-size:0.6rem;
+	}
+
+	.photo>img{                         /*reduce profile picture size in header*/
+		width:1.8rem;
+	}
+
+	.icon2{                   /*reduce the size of mike accordingly*/
+		right:7.5%;                  
+	}
+
+	.small-text{                    /*reduction in text size*/
+		font-size: 0.4rem;
+	}
+
+	.medium-text{                        /*reduction in text size*/
+		font-size: 0.5rem;
+	}
+	.large-text{
+		font-size:0.7rem;
+	}
+
+
+}
+
+

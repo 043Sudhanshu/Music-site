@@ -1,0 +1,961 @@
+<!DOCTYPE html>
+<html>
+<head>
+	  <title>music player</title>
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+	<link rel="stylesheet" type="text/css" href="new.css">
+</head>
+<body>
+
+
+
+
+<!-- 
+/*****************************************header-starts**********************************************/
+ -->
+
+	 <header id="header">
+      <!-- divided the header into two parts one having same class header-part
+      -->
+
+<!-- header-part1 is to give some specific values to our 1st part of header which we will see in css
+
+ -->  
+            <div class="header-part header-part1">
+              
+                               <div >
+                                <!--  play circle-icon -->
+                                           <i class="far fa-play-circle rotate" style="font-size:2rem; color:#929292;"></i>
+                               </div>
+
+               <div style="margin-right:16%;" class="large-text">
+                                       Ninja
+                                       <br>
+                                       Studio
+                  </div>
+ <!-- medium-text is the specific value of font size -->
+                <div class="medium-text">
+                 Favourites
+                </div>
+             </div>
+                
+         
+                            
+    <!--  header-part is common i have added a new class named margin to give margin to items                    
+     --> 
+            
+            <div class="header-part margin">
+           <!-- It's the div in header's second part in which i have increased the padding of search bar and adding 2 icons to the ends
+          --> 
+                      <div class="search">
+                               <div class="icon1"><i class="fas fa-search" ></i></div>
+                             
+                                 <div>    <input type="text" placeholder="Search"></div>
+                             
+                                <div class=icon2><i class="fas fa-microphone"></i></div>
+                      
+                        </div>
+                         <!--  here we have icon of bell -->  
+                      <div class="iconbell">
+                                  <i class="fas fa-bell"></i>
+                      </div>
+ <!--  profile pic at the corner -->
+                         <div class="photo">
+                                            <img  src="sudhanshu.jpeg">
+                         </div>
+
+            </div>
+        
+  </header>
+ 
+
+
+<!-- 
+/***************************************header-end******************************************************************/
+ -->
+
+
+
+
+
+
+
+
+
+<!-- main is divide into 2 parts one is section and another is aside -->
+
+<main id="main" class="medium-text">
+
+
+<!--     section is divided in numbers like from top to bottom they have id like section1,section2,section3 and so on
+
+ -->
+     <section id="section">
+     
+      <!-- 
+      here i am using flex property class because this class is common to add basic properties of flex
+     -->
+
+      <div class="section1 flex-property">
+             <!-- 
+             here i have made the inside box class to adjust the size of this div accordingly and this img1 class is to add image
+ -->
+              <div class="inside-box img1">
+               
+                </div>
+
+              <div class="inside-box img2">      <!--   similar for these also -->
+              
+                </div>
+
+              <div class="inside-box img3">
+              
+              </div>
+              
+       </div>
+
+       
+       <!-- 
+/***************************section 2 starts from here*********************/
+ -->
+
+     <h3>Latest Release</h3>
+
+  <!--    this section 2 has flexproperty -->
+       <div class="section2 flex-property" >
+
+<!-- this is the first div which is iniside the section2 and contaoin three more div -->
+        <div class="section2inside-box flex-property">
+              
+
+            <!--   this div is for image -->
+                <div class="section2-img image img4 large-text">
+
+                       <div>
+                         <i class="far fa-pause-circle"></i>           <!-- pause icon for hovering -->
+                        </div>
+                         <div >        <!--  play icon which targets the footer which is music player -->
+                                <a href="#footer">    <i  class="far fa-play-circle"></i>       </a>
+                        </div>
+
+
+               </div>
+
+              <!--  this div is for song name -->
+              <div style="width:50%;">
+                   <div class="medium-text">
+                    Simplicity
+                   </div>
+                   <div class="small-text">
+                    Mar 27,2020
+                   </div>
+               </div>
+
+
+ <!--               this div is for ... and 4:44 ,this is the third div-->
+               <div style="width:8%;">
+
+           <!--      /*here we have used select which is drop down list to list these items
+             -->   <select style="border: 0; background-color: transparent; color:grey;">
+                     <option style="color:white;">...</option>
+                          <option>Playnow</option>
+                       <option>Add to queue</option>
+                       <option>Add to fav</option>
+                      <option>Get Info</option>
+                </select>
+
+           <!-- we are using small-text class for small text
+            -->     <div class="small-text">
+                   4:44
+                </div>
+               </div>
+        </div>
+        
+         <!-- 
+these all parts are similar to the above part
+ -->
+ <!-- now we are moving to section 3 -->
+
+        <div class="section2inside-box flex-property">
+                 <div class="section2-img image img4 large-text">
+
+                       <div>
+                         <i class="far fa-pause-circle"></i>
+                        </div>
+                         <div >
+                                <a href="#footer">    <i  class="far fa-play-circle"></i>       </a>
+                        </div>
+
+
+               </div>
+             <div style="width:50%;">
+                   <div class="medium-text">
+                    Simplicity
+                   </div>
+                   <div class="small-text">
+                    Mar 27,2020
+                   </div>
+               </div>
+               <div style="width:8%;">
+                 <select style="border: 0; background-color: transparent; color:grey;">
+    <option style="color:white;">...</option>
+    <option>Playnow</option>
+    <option>Add to queue</option>
+    <option>Add to fav</option>
+    <option>Get Info</option>
+  </select>
+
+
+                <div class="small-text">
+                  4:44
+                </div>
+               </div>
+        </div>
+        
+        
+        <div class="section2inside-box flex-property">
+               <div class="section2-img image img4 large-text">
+
+                       <div>
+                         <i class="far fa-pause-circle"></i>
+                        </div>
+                         <div >
+                                <a href="#footer">    <i  class="far fa-play-circle"></i>       </a>
+                        </div>
+
+
+               </div>
+               <div style="width:50%;">
+                   <div class="medium-text">
+                    Simplicity
+                   </div>
+                   <div class="small-text">
+                    Mar 27,2020
+                   </div>
+               </div>
+               <div style="width:8%;">
+             <select style="border: 0; background-color: transparent; color:grey;">
+    <option style="color:white;">...</option>
+    <option>Playnow</option>
+    <option>Add to queue</option>
+    <option>Add to fav</option>
+    <option>Get Info</option>
+  </select>
+  <div class="small-text">
+                  4:44
+                </div>
+               </div>
+        </div>
+        
+        
+        <div class="section2inside-box flex-property">
+               <div class="section2-img image img4 large-text">
+
+                       <div>
+                         <i class="far fa-pause-circle"></i>
+                        </div>
+                         <div >
+                                <a href="#footer">    <i  class="far fa-play-circle"></i>       </a>
+                        </div>
+
+
+               </div>
+               <div style="width:50%;">
+                   <div class="medium-text">
+                    Simplicity
+                   </div>
+                   <div class="small-text">
+                    Mar 27,2020
+                   </div>
+               </div>
+               <div style="width:8%;">
+<select style="border: 0; background-color: transparent; color:grey;">
+    <option style="color:white;">...</option>
+    <option>Playnow</option>
+    <option>Add to queue</option>
+    <option>Add to fav</option>
+    <option>Get Info</option>
+  </select>
+                <div class="small-text">
+                  4:44
+                </div>
+               </div>
+        </div>
+      </div>
+
+
+
+<!-- /*section3*/ -->
+
+
+
+       <h3>Popular artist</h3>
+
+        <div class="section3">
+      
+<!-- 
+this image class is common for all classes in this we are maintaing the background properties and the img11 img12 img13 is for background images
+ -->
+         <div class="section2-img image img11 large-text">
+
+                       <div>
+                         <i class="far fa-pause-circle"></i>
+                        </div>
+                         <div >
+                                <a href="newpage2.html">    <i  class="far fa-play-circle"></i>       </a>
+                        </div>
+
+
+               </div>
+         <div class="section2-img image img12 large-text">
+
+                       <div>
+                         <i class="far fa-pause-circle"></i>
+                        </div>
+                         <div >
+                                <a href="newpage2.html">    <i  class="far fa-play-circle"></i>       </a>
+                        </div>
+
+
+               </div>
+                 <div class="section2-img image img13 large-text">
+
+                       <div>
+                         <i class="far fa-pause-circle"></i>
+                        </div>
+                         <div >
+                                <a href="newpage2.html">    <i  class="far fa-play-circle"></i>       </a>
+                        </div>
+
+
+               </div>
+                 <div class="section2-img image img14 large-text">
+
+                       <div>
+                         <i class="far fa-pause-circle"></i>
+                        </div>
+                         <div >
+                                <a href="newpage2.html">    <i  class="far fa-play-circle"></i>       </a>
+                        </div>
+
+
+               </div>
+                 <div class="section2-img image img15 large-text">
+
+                       <div>
+                         <i class="far fa-pause-circle"></i>
+                        </div>
+                         <div >
+                                <a href="newpage2.html">    <i  class="far fa-play-circle"></i>       </a>
+                        </div>
+
+
+               </div>
+                 <div class="section2-img image img16 large-text">
+
+                       <div>
+                         <i class="far fa-pause-circle"></i>
+                        </div>
+                         <div >
+                                <a href="newpage2.html">    <i  class="far fa-play-circle"></i>       </a>
+                        </div>
+
+
+               </div>
+      
+
+        </div>
+       <!--  section3 name div -->
+<!-- 
+this is the section just below the section three which has the same width value as the section 3 
+due to which it always come below the the parts of sections3 
+ -->
+            <div class="section3names small-text">
+
+        <div>Billy Eilish</div>
+        <div>pitbull</div>
+        <div>shawn mend</div>
+        <div>baby rexa</div>
+        <div>katty perry</div>
+        <div>Enrique</div>
+
+        </div>
+
+
+
+
+
+      <!--   section4 -->
+
+<!--       section 4 has all the properties common to section 4
+    we have added this section 4 class to give the background color and margin value accordingly 
+ -->        <div class="section3 section4">
+
+        <div class="image img33"></div>
+        <div class="image img22"></div>
+        <div class="image img03"></div>
+        <div class="image img55"></div>
+        <div class="image img66"></div>
+        <div class="image img11"></div>
+
+        </div>
+    
+  <!--    sameas section3 names so we have included that class and section4names class is to adjus the margin-top
+     because we want our text to be in mid of the image
+    -->   <div class="section3names section4names medium-text">
+
+        <div>pop</div>
+        <div>Love</div>
+        <div>classic</div>
+        <div>Jazz</div>
+        <div>Rock</div>
+        <div>Techno</div>
+
+        </div>
+
+
+
+
+
+
+     <!--    section5 -->
+
+
+
+      <div class="section5" style="margin:4% 0; ">
+           <!-- 
+here we have divided the section5 in three parts and made 3 more divs inside them which means all have there one more div..
+  we are doing this because we want to hide the hovering
+ -->
+             <div><div class="img01 e"><h1 >Party</h1></div></div>
+             <div><div class=" img02 e"><h1 >Animal</h1></div></div>
+             <div><div class=" img03 e"><h1>Classic</h1></div></div>    
+             
+          </div>
+        
+
+
+
+
+
+<!-- /*section 6 and section 7 are similar to each other and we can make them by inheriting all the properties of section3 we r removing the border radius only other part is same*/
+ -->
+
+
+
+       <h3>latest English</h3>
+
+        <div class="section3 border-radius">
+
+        <div class="image img11"></div>
+        <div class="image img12"></div>
+        <div class="image img13"></div>
+        <div class="image img14"></div>
+        <div class="image img15"></div>
+        <div class="image img16"></div>
+
+        </div>
+       <!--  section3 name div -->
+
+     <!--   same as section3 names -->
+            <div class="section3names small-text">
+
+        <div>Billy Eilish</div>
+        <div>pitbull</div>
+        <div>shawn</div>
+        <div>baby rexa</div>
+        <div>katty perry</div>
+        <div>Enrique</div>
+
+        </div>
+
+
+
+       <h3>latest Hindi</h3>
+
+        <div class="section3 border-radius">
+
+        <div class="image img11"></div>
+        <div class="image img12"></div>
+        <div class="image img13"></div>
+        <div class="image img14"></div>
+        <div class="image img15"></div>
+        <div class="image img16"></div>
+
+        </div>
+       <!--  section3 name div -->
+
+       <!-- same as section3 names -->
+            <div class="section3names small-text">
+
+        <div>Billy Eilish</div>
+        <div>pitbull</div>
+        <div>shawn </div>
+        <div>baby rexa</div>
+        <div>katty perry</div>
+        <div>Enrique</div>
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+  
+
+<h3> 
+
+
+
+
+</section>
+
+
+
+
+<!-- 
+/*******************************aside***************************************************/
+ -->
+<!--
+aside section is divided in two parts the 1st parts conatains the word Queue as heading and the drop down list
+ -->
+<!-- 
+2nd part contains the list of songs which is scrollable
+ -->
+<aside id="aside">
+
+
+   <!--  1st part -->
+  <div class="aside1">
+  <!--    this class is to make the text large
+   --><span class="large-text">
+    Queue
+  </span>
+       <!-- here we are making dropdown list using select -->
+  <p><select style="border: 0; background-color: transparent; color:grey;">
+    <option style="color:white;">Queue</option>
+    <option>Playlist</option>
+    <option>favorite song</option>
+
+  </select></p>
+  </div>
+
+
+
+
+<!-- this is the list of songs part of the aside -->
+
+  <div class="aside2">
+    <!-- 
+              here we have made (list-style-type: decimal-leading-zero) because we want our series like 01 02 03 etc like this
+          -->
+   
+      <ol style="list-style-type: decimal-leading-zero;">
+     
+
+         <!-- this aside2-insidebox is the class which gives the size to the list item -->
+         <div class="aside2-insidebox"><li></li>
+      <!--  image div -->     <!--     i have set some margin and width inline to set them perfectly -->
+                 <div class="image img501" style="margin-right: 2%;"></div>
+             <!--  name-div -->
+                  <div class="small-text" style="margin-top: 0; width: 27%;">
+                          Shake it off
+                        <p>  Taylor swift  </p>
+                   </div>
+           <!-- icon div -->    
+                   <div style="height:55%;width:7%;margin-left: 45%; ">
+                                             <i class="far fa-heart"></i>
+                   </div>   
+         </div>
+
+
+
+     <!--  all the other divs are same as above -->
+
+
+
+
+                  <div class="aside2-insidebox"><li></li>
+      <!--  image div -->
+                 <div class="image img502" style="margin-right: 2%;"></div>
+             <!--  name-div -->
+                  <div class="small-text" style="margin-top: 0; width: 28%;">
+                        Senorita
+                       <p>   Shawn   </p>
+                   </div>
+           <!-- icon div -->    
+                   <div style="height:55%;width:7%;margin-left: 45%; ">
+                                             <i class="far fa-heart"></i>
+                   </div>   
+         </div>
+         <div class="aside2-insidebox"><li></li>
+      <!--  image div -->
+                 <div class="image img503" style="margin-right: 2%;"></div>
+             <!--  name-div -->
+                  <div class="small-text" style="margin-top: 0; width: 27%;">
+                         I'm a
+                       <p>   Bebe Rexha </p>
+                   </div>
+           <!-- icon div -->    
+                   <div style="height:55%;width:7%;margin-left: 45%; ">
+                                             <i class="far fa-heart"></i>
+                   </div>   
+         </div>
+         <div class="aside2-insidebox"><li></li>
+      <!--  image div -->
+                 <div class="image img504" style="margin-right: 2%;"></div>
+             <!--  name-div -->
+                  <div class="small-text" style="margin-top: 0; width: 27%;">
+                       Alone
+                       <p>   Marshmello  </p>
+                   </div>
+           <!-- icon div -->    
+                   <div style="height:55%;width:7%;margin-left: 45%; ">
+                                             <i class="far fa-heart"></i>
+                   </div>   
+         </div>
+         <div class="aside2-insidebox"><li></li>
+      <!--  image div -->
+                 <div class="image img505" style="margin-right: 2%;"></div>
+             <!--  name-div -->
+                  <div class="small-text" style="margin-top: 0; width: 27%;">
+                            Simplicity
+                       <p>   karan </p>
+                   </div>
+           <!-- icon div -->    
+                   <div style="height:55%;width:7%;margin-left: 45%; ">
+                                             <i class="far fa-heart"></i>
+                   </div>   
+         </div>
+          
+         <div class="aside2-insidebox"><li></li>
+      <!--  image div -->
+                 <div class="image img506" style="margin-right: 2%;"></div>
+             <!--  name-div -->
+                  <div class="small-text" style="margin-top: 0; width: 27%;">
+                          Shake it off
+                        <p>  Taylor swift  </p>
+                   </div>
+           <!-- icon div -->    
+                   <div style="height:55%;width:7%;margin-left: 45%; ">
+                                             <i class="far fa-heart"></i>
+                   </div>   
+         </div>
+
+
+                  <div class="aside2-insidebox"><li></li>
+      <!--  image div -->
+                 <div class="image img502" style="margin-right: 2%;"></div>
+             <!--  name-div -->
+                  <div class="small-text" style="margin-top: 0; width: 28%;">
+                        Senorita
+                       <p>   Shawn   </p>
+                   </div>
+           <!-- icon div -->    
+                   <div style="height:55%;width:7%;margin-left: 45%; ">
+                                             <i class="far fa-heart"></i>
+                   </div>   
+         </div>
+         <div class="aside2-insidebox"><li></li>
+      <!--  image div -->
+                 <div class="image img503" style="margin-right: 2%;"></div>
+             <!--  name-div -->
+                  <div class="small-text" style="margin-top: 0; width: 27%;">
+                         I'm a
+                       <p>   Bebe Rexha </p>
+                   </div>
+           <!-- icon div -->    
+                   <div style="height:55%;width:7%;margin-left: 45%; ">
+                                             <i class="far fa-heart"></i>
+                   </div>   
+         </div>
+         <div class="aside2-insidebox"><li></li>
+      <!--  image div -->
+                 <div class="image img504" style="margin-right: 2%;"></div>
+             <!--  name-div -->
+                  <div class="small-text" style="margin-top: 0; width: 27%;">
+                       Alone
+                       <p>   Marshmello  </p>
+                   </div>
+           <!-- icon div -->    
+                   <div style="height:55%;width:7%;margin-left: 45%; ">
+                                             <i class="far fa-heart"></i>
+                   </div>   
+         </div>
+         <div class="aside2-insidebox"><li></li>
+      <!--  image div -->
+                 <div class="image img505" style="margin-right: 2%;"></div>
+             <!--  name-div -->
+                  <div class="small-text" style="margin-top: 0; width: 27%;">
+                            Simplicity
+                       <p>   karan </p>
+                   </div>
+           <!-- icon div -->    
+                   <div style="height:55%;width:7%;margin-left: 45%; ">
+                                             <i class="far fa-heart"></i>
+                   </div>   
+         </div>
+          
+         <div class="aside2-insidebox"><li></li>
+      <!--  image div -->
+                 <div class="image img506" style="margin-right: 2%;"></div>
+             <!--  name-div -->
+                  <div class="small-text" style="margin-top: 0; width: 27%;">
+                          Shake it off
+                        <p>  Taylor swift  </p>
+                   </div>
+           <!-- icon div -->    
+                   <div style="height:55%;width:7%;margin-left: 45%; ">
+                                             <i class="far fa-heart"></i>
+                   </div>   
+         </div>
+         
+
+                  <div class="aside2-insidebox"><li></li>
+      <!--  image div -->
+                 <div class="image img502" style="margin-right: 2%;"></div>
+             <!--  name-div -->
+                  <div class="small-text" style="margin-top: 0; width: 28%;">
+                        Senorita
+                       <p>   Shawn   </p>
+                   </div>
+           <!-- icon div -->    
+                   <div style="height:55%;width:7%;margin-left: 45%; ">
+                                             <i class="far fa-heart"></i>
+                   </div>   
+         </div>
+         <div class="aside2-insidebox"><li></li>
+      <!--  image div -->
+                 <div class="image img503" style="margin-right: 2%;"></div>
+             <!--  name-div -->
+                  <div class="small-text" style="margin-top: 0; width: 27%;">
+                         I'm a
+                       <p>   Bebe Rexha </p>
+                   </div>
+           <!-- icon div -->    
+                   <div style="height:55%;width:7%;margin-left: 45%; ">
+                                             <i class="far fa-heart"></i>
+                   </div>   
+         </div>
+         <div class="aside2-insidebox"><li></li>
+      <!--  image div -->
+                 <div class="image img504" style="margin-right: 2%;"></div>
+             <!--  name-div -->
+                  <div class="small-text" style="margin-top: 0; width: 27%;">
+                       Alone
+                       <p>   Marshmello  </p>
+                   </div>
+           <!-- icon div -->    
+                   <div style="height:55%;width:7%;margin-left: 45%; ">
+                                             <i class="far fa-heart"></i>
+                   </div>   
+         </div>
+         <div class="aside2-insidebox"><li></li>
+      <!--  image div -->
+                 <div class="image img505" style="margin-right: 2%;"></div>
+             <!--  name-div -->
+                  <div class="small-text" style="margin-top: 0; width: 27%;">
+                            Simplicity
+                       <p>   karan </p>
+                   </div>
+           <!-- icon div -->    
+                   <div style="height:55%;width:7%;margin-left: 45%; ">
+                                             <i class="far fa-heart"></i>
+                   </div>   
+         </div>
+          
+         <div class="aside2-insidebox"><li></li>
+      <!--  image div -->
+                 <div class="image img506" style="margin-right: 2%;"></div>
+             <!--  name-div -->
+                  <div class="small-text" style="margin-top: 0; width: 27%;">
+                          Shake it off
+                        <p>  Taylor swift  </p>
+                   </div>
+           <!-- icon div -->    
+                   <div style="height:55%;width:7%;margin-left: 45%; ">
+                                             <i class="far fa-heart"></i>
+                   </div>   
+         </div>
+</ol>
+</div>
+</aside>
+
+
+
+
+
+
+
+
+
+<!-- /*********************footer*********************************/ -->
+
+<!--   ------------------------------- footer starts from here-----------------------------------------  -->
+
+
+<div id="footer" class="large-text" >
+<!--  left div -->
+<!-- footer is divided into three parts having flex property -->
+
+
+
+<!--  left div -->
+
+  <div class="left-footer-div">
+      <!---------image div having specific properties of width and height---->
+    
+    <div class="img2 image" style="width:50px; height: 60px;" >
+        
+    </div>
+    <!-- 
+    this div contains song name it is inside the left div of footer
+       -->
+      <div class="song-name medium-text">
+                        Alone
+                      
+                       <p>   Ninja  </p>
+           </div>
+            <!--   this div contains two icons one is heart and other is volume mute
+   --> 
+    <div style="margin-left: 10%; font-size:0.9em; color:black;">
+      <span>
+        <i class="far fa-heart"></i>
+      </span>
+      &ensp;
+        <span>
+          <i class="fas fa-volume-mute"></i>
+        </span>
+    </div>
+  </div>
+<!--   middle player div -->
+
+
+  <div>
+ <!--   this middle player has two div one contains icone and another has sound bar
+      --> 
+<!-- 
+     player icon is the upper div  it contains all the icons
+      -->
+      <div class="player-icons large-text">
+          <div>
+            <i class="fas fa-random"></i>
+          </div>
+          <div>
+                   <i class="fas fa-step-backward"></i>
+          </div>
+          <div >
+                  <i class="far fa-pause-circle"></i>
+     
+          </div>
+          <div>
+                  <i class="fas fa-step-forward"></i>
+          </div>
+          <div>
+            <i class="fas fa-sync-alt"></i>
+          </div>
+
+      </div>
+  <!-- 
+      this is the lower div of middle player which contains sound bar
+   -->
+        <div class="volume medium-text" >
+         
+             <span>  1.44  </span>
+              <div style="width:70%; height:95%;"> <input type="range" class="slider">
+                 </div>
+           <span>&nbsp;3.00</span>
+
+        </div>
+   </div>
+     <!-- right div --><!-- 
+     right div contains all the icons and sound bar
+ -->
+  <div style=" color:black; font-size:0.8em;">
+    <span>
+      <i class="fas fa-sliders-h"></i>
+    </span>
+          &ensp;
+      <span>
+        <i class="fas fa-dot-circle"></i>
+      </span>
+            &ensp;
+        <span>
+          <i class="fas fa-volume-up"></i>
+        </span>
+        &ensp;
+          <span>
+            <input type="range">
+          </span>
+          &ensp;
+      
+  </div>
+</div>
+
+
+
+
+
+
+
+</main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

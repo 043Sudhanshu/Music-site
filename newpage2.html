@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>music player</title>
+	<link rel="stylesheet" type="text/css" href="newpage2.css">
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+
+</head>
+<body>
+  
+
+
+
+
+ <!--  this page is divided into header and main where main has two child one is section and another is aside  -->
+
+
+
+<!-- 
+/*****************************************header-starts**********************************************/
+ -->
+ <header id="header">
+
+ 	<!-- divided the header into two parts one having same class header-part
+      -->
+
+<!-- header-part1 is to give some specific values to our 1st part of header which we will see in css
+
+ -->             <div class="header-part header-part1" >
+              
+                               <div >
+                                           <i class="far fa-play-circle rotate" style="font-size:3rem; color:#929292;"></i>
+                                          <!--  play circle-icon -->
+                               </div>
+
+               <div style="margin-right:16%; font-size: 1.2rem;">
+                                       Ninja
+                                       <br>
+                                       Studio
+                  </div>
+       
+       <!-- medium-text is the specific value of font size -->
+
+                <div class="medium-text"    style=" font-size: 1.2rem;">
+                 Favourites
+                </div>
+             </div>
+                
+         
+    <!--  header-part is common i have added a new class named margin to give margin to items                    
+     -->        
+            <div class="header-part margin">
+         
+                   
+        <!-- It's the div in header's second part in which i have increased the padding of search bar and adding 2 icons to the ends
+          -->             <div class="search">
+                               <div class="icon1"><i class="fas fa-search" ></i></div>
+                             
+                                 <div>    <input type="text" placeholder="Search"></div>
+                             
+                                <div class=icon2><i class="fas fa-microphone"></i></div>
+                      
+                        </div>
+                <!--  here we have icon of bell -->       
+                      <div class="iconbell" style=" font-size: 1.6rem;">
+                                  <i class="fas fa-bell"></i>
+                      </div>
+
+                     <!--  profile pic at the corner -->
+
+                         <div class="photo">
+                                            <img  src="sudhanshu.jpeg">
+                         </div>
+
+            </div>
+        
+  </header>
+ 
+
+<!-- 
+/***************************************header-end******************************************************************/
+ -->
+
+
+
+<!--               /***************************************Main section starts from here its has 2 parts section and aside**********/
+
+ -->
+<div id="main">
+
+
+
+	<section id="section">
+       
+                                               <!--   details of artist which is first section -->
+            <div class="artist">
+
+
+               <!--   artist section has two div with profile pic and details -->
+
+
+                                	<!-- artist-pic -->
+            
+
+            	<div class="artist-pic image img501" >          <!--   artist pic which is set in css in background image
+            		                                             -->
+            	</div>
+
+              <!-- its the another section of next div of artist   -artist-details
+                   -->
+             	<div  class="artist-detail small-text" >
+                         <div >
+                        Billie Eilish      &emsp; &emsp; &emsp;  62M followers
+                       </div>
+                   <div style="height: 40%; margin-top: -8%; margin-bottom:8%;">
+                    Dont smile at me
+                    <p>Billie Eilish is an American singer-songwriter who first shot to prominence when she uploaded her breakout hit "Ocean Eyes" to SoundCloud in 2015. The song went viral in 2016</p>
+
+                   </div>
+
+                  <!--  we have given class play to adjust its size accordingly and small-text class for font size
+                   -->      <div class="play small-text">
+                          <div >
+                             Play All
+                          </div>
+                          <div>
+                            Follow
+                          </div>
+
+                       </div>
+
+            	</div>
+            </div>
+
+<!-- 
+/******************************end of section 1 which was artist section*************************/
+ -->
+
+ 
+<!-- 
+ /**************************this is 2nd section/which conatains the songs**************/
+ -->
+  <div class="section2">
+<!-- 
+              here we have made (list-style-type: decimal-leading-zero) because we want our series like 01 02 03 etc like this
+          -->
+      <ol style="list-style-type: decimal-leading-zero;">
+     
+
+
+   <!-- our particular list has pic name and icons -->
+
+         <div class="section2-insidebox"><li></li>
+
+      <!--  image div -->
+                 <div class="image img505" style="margin-right: 2%;"></div>
+             <!--  name-div -->                                     <!--     i have set some margin and width inline to set them perfectly -->
+                  <div class="medium-text" style="margin-top: 0; width: 22%;">
+              Belly ache   <br>
+                       Billie Eilish  
+                   </div>
+           <!-- icon div -->    
+                   <div style="height:55%;width:7%;margin-left: 45%; ">
+                                             <i class="far fa-heart"></i>
+                   </div>   <i class="fas fa-plus"></i>
+         </div>
+
+
+
+
+
+     <!--  all the other divs are same as above -->
+
+
+
+               <div class="section2-insidebox"><li></li>
+      <!--  image div -->
+                 <div class="image img504" style="margin-right: 2%;"></div>
+             <!--  name-div -->
+                  <div class="medium-text" style="margin-top: 0; width: 22%;">
+                   Bad guy   <br>
+                       Billie Eilish  
+                   </div>
+           <!-- icon div -->    
+                   <div style="height:55%;width:7%;margin-left: 45%; ">
+                                             <i class="far fa-heart"></i>
+                   </div>   <i class="fas fa-plus"></i>
+         </div>
+               <div class="section2-insidebox"><li></li>
+      <!--  image div -->
+                 <div class="image img503" style="margin-right: 2%;"></div>
+             <!--  name-div -->
+                  <div class="medium-text" style="margin-top: 0; width: 22%;">
+                  My boy   <br>
+                       Billie Eilish  
+                   </div>
+           <!-- icon div -->    
+                   <div style="height:55%;width:7%;margin-left: 45%; ">
+                                             <i class="far fa-heart"></i>
+                   </div>   <i class="fas fa-plus"></i>
+         </div>
+               <div class="section2-insidebox"><li></li>
+      <!--  image div -->
+                 <div class="image img502" style="margin-right: 2%;"></div>
+             <!--  name-div -->
+                  <div class="medium-text" style="margin-top: 0; width: 22%;">
+                Copy cat  <br>
+                       Billie Eilish  
+                   </div>
+           <!-- icon div -->    
+                   <div style="height:55%;width:7%;margin-left: 45%; ">
+                                             <i class="far fa-heart"></i>
+                   </div>   <i class="fas fa-plus"></i>
+         </div>
+               <div class="section2-insidebox"><li></li>
+      <!--  image div -->
+                 <div class="image img501" style="margin-right: 2%;"></div>
+             <!--  name-div -->
+                  <div class="medium-text" style="margin-top: 0; width: 22%;">
+                   ocean Eyes   <br>
+                       Billie Eilish  
+                   </div>
+           <!-- icon div -->    
+                   <div style="height:55%;width:7%;margin-left: 45%; ">
+                                             <i class="far fa-heart"></i>
+                   </div>   <i class="fas fa-plus"></i>
+         </div>
+</ol>
+</div>
+
+           
+
+     </section>
+
+
+
+<!-- 
+/********************************section end here*******************************************/
+ -->
+
+
+
+
+
+
+<!-- 
+/*************************************aside section starts from here************************/
+ -->
+
+
+
+
+<!-- 
+
+here i have divided the aside section into two parts 
+
+i have given both of them same id.......aside1.........
+
+because they both have many similarities ,after that i have just reduce the height of bottom div 
+
+i will explain more further
+ -->
+
+
+
+
+     <aside id="aside" class="small-text">
+
+<!-- 
+/*******************this is the above part of aside which has heading in one div and one more div conatining the songs list
+ -->
+     <div id="aside1">
+            <!-- 
+            this is div of heading in which i have used flex properties to adjust them
+ -->
+            <!-- every element of div has relative value of font size
+             -->
+
+             <div class="heading">
+            	<div style="font-size:1.5em;">
+                Similar songs
+            	</div>
+            	<div style="font-size:0.9em;">
+                view all 
+            	</div>
+            </div>
+            
+
+<!-- 
+     upper we have used for the main div of songs which is adjusting all the main div of songs
+     -->
+            <div class="upper">
+    <!-- 
+    inside is the one div of upper section which means div of particular song
+ -->
+           	<div class="inside">
+
+                   <!-- this div contains image class which sets the background properties and the img504 class which sets the backgroung image
+                    --><div class="image img504">
+                   </div>
+
+             <!--   this div contains name so i have increased the width here and set the margin accordingly to get the required space between the image and the text
+              -->      
+                   <div style="width:62%; margin-left:-5%;">
+                   	
+                   	Ocean Eyes<br>
+                <small>   Billi Eilish</small>
+
+                   </div>
+
+               <!-- this is the last div which contains a dot and number and set the width accordingly
+                -->
+
+                                   <div style="width:10%;">
+                 <strong>. . .</strong><br>
+                  <small> 4.44</small>
+
+                   </div>
+             </div>
+    
+
+<!-- all other divs ahead are same -->
+
+
+
+
+            		<div class="inside">
+
+
+                   <div class="image img505">
+                   </div>
+                   <div style="width:62%; margin-left:-5%;">
+                   	My Boy<br>
+                <small>   Billi Eilish</small>
+
+                   </div>
+                   <div style="width:10%;">
+                     <strong>. . .</strong><br>
+                  <small> 4.44</small>
+
+                   </div>
+             </div>
+            		<div class="inside">
+
+
+                   <div class="image img506">
+                   </div>
+                   <div style="width:62%; margin-left:-5%;">
+                   	COPY Cat<br>
+                <small>   Billi Eilish</small>
+
+                   </div>
+                   <div style="width:10%;">
+                     <strong>. . .</strong><br>
+                  <small> 4.44</small>
+                   </div>
+             </div>
+
+            </div>
+
+     </div>
+
+
+
+<!-- 
+this is the div i was explaining about-----it have all propeties same just the difference in height and the image size
+
+anything other than this is same ....fr height and image size i have given 2 classes in which i have override the properties of height of div and size of image
+-->
+
+<!-- 
+m going to point those changes
+ -->
+        <div id="aside1">
+            
+            <div class="heading">
+            	<div style="font-size:1.5em;">
+                Recently Played
+            	</div>
+            	<div style="font-size:0.9em;">
+                view all 
+            	</div>
+            </div>
+            <div class="upper lower">   <!--    here this lower class is to set the height of internal div
+                                         -->
+
+
+
+            	<div class="inside lower-inside">        <!--  lower inside class is added to set the height 
+                                                         
+
+                                                          -->
+
+                   <div class="image img504">
+                   </div>
+                   <div style="width:62%; margin-left:-5%;">
+                   	My Boy<br>
+                <small>   Billi Eilish</small>
+
+                   </div>
+                   <div style="width:10%;">
+                <i class="far fa-heart"></i>
+
+                   </div>
+             </div>
+
+            	<div class="inside lower-inside">
+
+
+                   <div class="image img503">
+                   </div>
+                   <div style="width:62%; margin-left:-5%;">
+                   	Bad Guy<br>
+                <small>   Billi Eilish</small>
+
+                   </div>
+                   <div style="width:10%;">
+                <i class="far fa-heart"></i>
+
+                   </div>
+             </div>
+            
+	<div class="inside lower-inside">
+
+
+                   <div class="image img502">
+                   </div>
+                   <div style="width:62%; margin-left:-5%;">
+                   	Ocean Eyes<br>
+                <small>   Billi Eilish</small>
+
+                   </div>
+                   <div style="width:10%;">
+           <i class="far fa-heart"></i>
+
+                   </div>
+             </div>
+
+
+             	<div class="inside lower-inside">
+
+
+                   <div class="image img501">
+                   </div>
+                   <div style="width:62%; margin-left:-5%;">
+                   COPY CAT<br>
+                <small>   Billi Eilish</small>
+
+                   </div>
+                   <div style="width:10%;">
+              <i class="far fa-heart"></i>
+
+                   </div>
+             </div>
+
+	        <div class="inside lower-inside">        
+
+                   <div class="image img504">
+                   </div>
+                   <div style="width:62%; margin-left:-5%;">
+                   	My Boy<br>
+                <small>   Billi Eilish</small>
+
+                   </div>
+                   <div style="width:10%;">
+                <i class="far fa-heart"></i>
+
+                   </div>
+             </div>
+
+
+
+
+
+
+            </div>
+
+     </div>
+
+
+     
+
+ </aside>
+   
+
+<!--   ------------------------------- footer starts from here-----------------------------------------  -->
+
+<div id="footer" class="large-text" >
+
+
+<!-- footer is divided into three parts having flex property -->
+
+
+
+<!--  left div -->
+
+
+
+  <div class="left-footer-div">
+
+    <!---------image div having specific properties of width and height---->
+     
+    <div class="img505 image" style="width:50px; height: 60px; margin-right:1%;" >
+        
+    </div>
+<!-- 
+    this div contains song name it is inside the left div of footer
+       --><div class="song-name ">
+                        Bad guy
+                      
+                       <p>   Billie Eilish  </p>
+           </div>
+    
+  <!--   this div contains two icons one is heart and other is volume mute
+   -->  <div style="margin-left: 10%; font-size:1.2rem; color:black;">
+      <span>
+        <i class="far fa-heart"></i>
+      </span>
+      &ensp;
+        <span>
+          <i class="fas fa-volume-mute"></i>
+        </span>
+    </div>
+  </div>
+
+
+
+
+
+<!--   middle player div -->
+  <div>
+     <!--   this middle player has two div one contains icone and another has sound bar
+      --> 
+<!-- 
+     player icon is the upper div  it contains all the icons
+      -->
+      <div class="player-icons ">
+          <div>
+            <i class="fas fa-random"></i>
+          </div>
+          <div>
+                   <i class="fas fa-step-backward"></i>
+          </div>
+          <div >
+                  <i class="far fa-pause-circle" style="font-size: 2rem;"></i>
+     
+          </div>
+          <div>
+                  <i class="fas fa-step-forward"></i>
+          </div>
+          <div>
+            <i class="fas fa-sync-alt"></i>
+          </div>
+
+      </div>
+<!-- 
+      this is the lower div of middle player which contains sound bar
+   -->
+        <div class="volume " style="color:black;" >
+         
+             <span>  1.44  </span>
+              <div style="width:70%; height:95%;"> <input type="range" class="slider">
+                 </div>
+           <span>&nbsp;3.00</span>
+
+        </div>
+   </div>
+
+
+
+
+
+
+
+
+
+
+
+   <!-- right div --><!-- 
+     right div contains all the icons and sound bar
+ -->
+  <div style=" color:black; font-size:1.2rem;">
+    <span>
+      <i class="fas fa-sliders-h"></i>
+    </span>
+          &ensp;
+      <span>
+        <i class="fas fa-dot-circle"></i>
+      </span>
+            &ensp;
+        <span>
+          <i class="fas fa-volume-up"></i>
+        </span>
+        &ensp;
+          <span>
+            <input type="range">
+          </span>
+          &ensp;
+      
+  </div>
+</div>
+
+
+
+
+
+</body>
+</html>
