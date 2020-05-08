@@ -3,6 +3,7 @@ html{
 }
 
 
+
 body{
  margin:0;
  color:white;                   
@@ -253,6 +254,11 @@ properties of whole aside div
 	height:40vw;
     width:30%;
 }
+@media screen and (max-width: 700px){
+#aside{
+  width:70%;
+}
+}
 
 
 /*this is used for both the headings of  the divs inside the aside 
@@ -348,8 +354,13 @@ class for div inside the aside conatining songs
 	   padding:3%;
 	}
 	#main{                          
-		top:95px;                /*main comes down after the header comes down*/
+		top:95px; 
+    flex-wrap: wrap; 
+    height:797px;              /*main comes down after the header comes down*/
 	}
+  #section{
+    height: 0vw;
+  }
 	.icon2{
 		right:4.4%;            /*set the icon position*/
 	}
