@@ -29,7 +29,7 @@ body{
 /*class for all div's to inherit this small text property*/
 .small-text{
 	font-size: var(--small-text);
-	color: grey;
+	color: white;
 }
 
 /*class for all div's to inherit this medium text property*/
